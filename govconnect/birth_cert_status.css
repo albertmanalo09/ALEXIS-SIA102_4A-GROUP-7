@@ -1,0 +1,67 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(197, 197, 197);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #334155; /* Slightly lighter slate */
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    color: #0ea5e9; /* Light blue */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #1e293b; /* Match background for subtle lines */
+    padding: 10px;
+    text-align: center;
+    color: #f1f5f9; /* Off-white text for readability */
+}
+
+th {
+    background-color: #0ea5e9; /* Light blue for headers */
+    color: #000; /* Dark contrast text */
+    font-weight: bold;
+}
+
+td {
+    background-color: #475569; /* Muted dark slate for rows */
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #0ea5e9; /* Blue button */
+    color: #000; /* Dark text */
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0284c7; /* Darker blue on hover */
+    color: #f1f5f9; /* Off-white text */
+}

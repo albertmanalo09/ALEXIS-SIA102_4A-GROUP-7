@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SEMI FINAL TASK WEBSITE PROJECT</title>
+    <style>
+        /* No scrolling */
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        /* Style for floating area */
+        .floating-area {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            background-color: #fff; /* White background */
+        }
+
+        .circles div {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: #000; /* Black circles */
+            border-radius: 50%;
+            animation: move 15s infinite linear;
+        }
+
+        .circles div:nth-child(1) { top: 20%; left: 10%; animation-duration: 20s; }
+        .circles div:nth-child(2) { top: 30%; left: 80%; animation-duration: 25s; }
+        .circles div:nth-child(3) { top: 50%; left: 50%; animation-duration: 18s; }
+        .circles div:nth-child(4) { top: 70%; left: 20%; animation-duration: 22s; }
+        .circles div:nth-child(5) { top: 80%; left: 60%; animation-duration: 30s; }
+        .circles div:nth-child(6) { top: 15%; left: 30%; animation-duration: 27s; }
+        .circles div:nth-child(7) { top: 25%; left: 60%; animation-duration: 23s; }
+        .circles div:nth-child(8) { top: 60%; left: 75%; animation-duration: 28s; }
+        .circles div:nth-child(9) { top: 40%; left: 10%; animation-duration: 20s; }
+        .circles div:nth-child(10) { top: 90%; left: 50%; animation-duration: 32s; }
+        .circles div:nth-child(11) { top: 70%; left: 80%; animation-duration: 26s; }
+        .circles div:nth-child(12) { top: 20%; left: 40%; animation-duration: 24s; }
+        .circles div:nth-child(13) { top: 60%; left: 20%; animation-duration: 22s; }
+
+        /* Animation for circles */
+        @keyframes move {
+            0% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-200px) rotate(180deg); }
+            100% { transform: translateY(0) rotate(360deg); }
+        }
+
+        /* Style for the about section */
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: black;
+            text-align: center;
+        }
+
+        .info {
+            position: relative;
+        }
+
+        /* Center the logo */
+        .info img {
+            width: 200px; /* Adjust logo size */
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .text p {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #000; /* Black text */
+        }
+
+        /* Button style */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            color: #fff;
+            background-color: #000; /* Black button */
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            position: relative;
+            top: 20px;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            background-color: #555; /* Darker hover effect */
+        }
+
+        /* Arrow icon styling */
+        .btn i {
+            margin-left: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="floating-area">
+        <div class="circles">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <section class="about">
+        <div class="info">
+            <div class="text">
+                <img src="logo.png" alt="Logo">
+                <a href="login.php" class="btn">
+                    Get Started
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

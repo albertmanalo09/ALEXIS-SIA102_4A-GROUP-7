@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(197, 197, 197);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #13293d;
+    padding: 38px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    position: relative;
+}
+
+h1.title {
+    color: #ffd700;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.voter-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.voter-table th, .voter-table td {
+    border: 1px solid #234059;
+    padding: 10px;
+    text-align: center;
+    color: #e9ebed;
+}
+
+.voter-table th {
+    background-color: #0d4f8b;
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.voter-table td {
+    background-color: #174b6d;
+}
+
+.voter-table tr:nth-child(even) td {
+    background-color: #195d86;
+}
+
+.voter-table tr:nth-child(odd) td {
+    background-color: #174b6d;
+}
+
+.no-data {
+    color: #e9ebed;
+    background-color: #234059;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+}
+
+.back-button {
+    background-color: #ffd700;
+    color: #13293d;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #e5c100;
+    color: #0a4275;
+}

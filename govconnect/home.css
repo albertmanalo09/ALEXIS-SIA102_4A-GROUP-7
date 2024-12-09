@@ -1,0 +1,143 @@
+/* General Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-image: url('bg.png'); /* Replace 'bg.jpg' with the actual image file */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    font-family: sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    width: 60px; /* Narrow width by default */
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    color: #fff; 
+    padding: 20px 5px; /* Adjusted padding for narrow view */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: width 0.3s ease; 
+}
+
+.navbar:hover {
+    width: 220px; /* Expand on hover */
+}
+
+/* Marquee Styling */
+.navbar marquee {
+    display: none; /* Hide marquee initially */
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.navbar:hover marquee {
+    display: block; /* Show marquee on hover */
+    font-size: 14px;
+}
+
+/* Menu List Styling */
+.navbar ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    margin-bottom: 15px; 
+    text-align: center;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the icon and text */
+    justify-content: center;
+    padding: 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+.navbar ul li a span.full-text {
+    display: none; /* Hide full text initially */
+}
+
+.navbar ul li a:hover span.icon {
+    display: none; /* Hide icon on hover */
+}
+
+.navbar ul li a:hover span.full-text {
+    display: inline; /* Show full text on hover */
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Logout Button Styling */
+.logout-button {
+    transform: translateY(-20px); /* Move up by default */
+    transition: transform 0.3s ease; /* Smooth transition for movement */
+}
+
+.logout-button:hover {
+    transform: translateY(-30px); /* Move up further on hover */
+}
+
+.logout-button img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.logout-button p {
+    margin: 0;
+}
+
+.logout-button p a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-button p a span.full-text {
+    display: none; /* Hide full text initially */
+}
+
+.logout-button p a:hover img {
+    display: none; /* Hide image on hover */
+}
+
+.logout-button p a:hover span.full-text {
+    display: inline; /* Show full text on hover */
+}
+
+.logout-button p a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}

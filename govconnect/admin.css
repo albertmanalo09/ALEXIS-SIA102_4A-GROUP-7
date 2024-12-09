@@ -1,0 +1,150 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d7d7d7;
+    color: white;
+}
+
+/* Header styles */
+header {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    color: gold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+header img.logo {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 80px;
+    height: auto;
+}
+
+/* Logout button styles */
+header .logout {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: gold;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header .logout img {
+    width: 20px;
+    height: 20px;
+}
+
+header .logout:hover {
+    background-color: orange;
+}
+
+/* Breadcrumb navigation styles */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.breadcrumbs {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.breadcrumbs a {
+    color: gold;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: black;
+}
+
+.breadcrumbs a img {
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+}
+
+.breadcrumbs a:hover {
+    background-color: orange;
+    color: black;
+}
+
+.breadcrumbs a.active {
+    background-color: orange;
+    color: black;
+}
+
+/* Container styles */
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.container h2 {
+    margin-top: 0;
+    color: gold;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: black;
+    color: gold;
+}
+
+tr:hover {
+    background-color: rgba(255, 165, 0, 0.2);
+}
+
+/* Button styles */
+input[type='button'] {
+    background-color: gold;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type='button']:hover {
+    background-color: orange;
+}
